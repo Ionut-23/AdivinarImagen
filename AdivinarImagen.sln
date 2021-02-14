@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdivinarImagen", "AdivinarImagen\AdivinarImagen.csproj", "{7DC0A415-8056-466F-8524-96A58E14448D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DC0A415-8056-466F-8524-96A58E14448D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC0A415-8056-466F-8524-96A58E14448D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC0A415-8056-466F-8524-96A58E14448D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC0A415-8056-466F-8524-96A58E14448D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC0E2EA9-7327-47B5-8D3B-2E199D087944}
+	EndGlobalSection
+EndGlobal
