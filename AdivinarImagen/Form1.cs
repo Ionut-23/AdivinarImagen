@@ -25,17 +25,40 @@ namespace AdivinarImagen
         }
 
         private int selecImagen;
+        private string pokemon;
         private void button1_Click(object sender, EventArgs e)
         {
 
             Random random = new Random();
-            string ruta = "Ionut-23/AdivinarImagen/AdivinarImagen/Resources/";
+          
             selecImagen = random.Next(1, 6);
-           
-            Console.WriteLine("AdivinarImagen/AdivinarImagen/Resources/"+selecImagen.ToString() + ".jpg");
-            pictureBox1.Image = Image.FromFile("Ionut-23/AdivinarImagen/AdivinarImagen/Resources/"+selecImagen.ToString() + ".jpg");
 
+            switch (selecImagen)
+            {
+                case 1:
+                    pictureBox1.Image = Properties.Resources._1;
+                    pokemon = "charizard";
+                    break;
+                case 2:
+                    pictureBox1.Image = Properties.Resources._2;
+                    pokemon = "digglet";
+                    break;
+                case 3:
+                    pictureBox1.Image = Properties.Resources._3;
+                    pokemon = "lucario";
+                    break;
+                case 4:
+                    pictureBox1.Image = Properties.Resources._4;
+                    pokemon = "mew";
+                    break;
+                case 5:
+                    pictureBox1.Image = Properties.Resources._5;
+                    pokemon = "pikachu";
+                    break;
+              
+            }
 
+        
 
         }
 
@@ -52,7 +75,7 @@ namespace AdivinarImagen
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == selecImagen.ToString())
+            if (textBox1.Text.ToLower() == pokemon)
             {
                 label3.Text = "Correcto!!";
             }
@@ -60,6 +83,11 @@ namespace AdivinarImagen
             {
                 label3.Text = "Prueba otra vez..";
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
